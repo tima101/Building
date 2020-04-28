@@ -106,25 +106,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "@material-ui/core/Toolbar");
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _SharedStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SharedStyles */ "./components/SharedStyles.js");
+/* harmony import */ var _SharedStyles__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_SharedStyles__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/chanson6/Desktop/hddle-master/Building/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
 
 
 const Header = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4,
+    lineNumber: 7,
     columnNumber: 3
+  }
+}, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  style: _SharedStyles__WEBPACK_IMPORTED_MODULE_4__["styleToolbar"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }
+}, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  container: true,
+  direction: "row",
+  justify: "space-around",
+  align: "center",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 7
+  }
+}, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  item: true,
+  xs: 12,
+  style: {
+    textAlign: "right"
+  },
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 9
   }
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/login",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5,
-    columnNumber: 5
+    lineNumber: 11,
+    columnNumber: 11
   }
 }, __jsx("a", {
   style: {
@@ -133,12 +173,30 @@ const Header = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 7
+    lineNumber: 12,
+    columnNumber: 13
   }
-}, "Log in")));
+}, "Log in"))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/SharedStyles.js":
+/*!************************************!*\
+  !*** ./components/SharedStyles.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const styleToolbar = {
+  background: "#FFF",
+  height: "64px",
+  paddingRight: "20px"
+};
+module.exports = {
+  styleToolbar
+};
 
 /***/ }),
 
@@ -2266,7 +2324,7 @@ const Index = () => __jsx("div", {
     lineNumber: 14,
     columnNumber: 5
   }
-}, "Content on Index page"));
+}, "Content on Index page, yo!"));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
@@ -2281,6 +2339,28 @@ const Index = () => __jsx("div", {
 
 module.exports = __webpack_require__(/*! /Users/chanson6/Desktop/hddle-master/Building/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@material-ui/core/Grid":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Grid" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Grid");
+
+/***/ }),
+
+/***/ "@material-ui/core/Toolbar":
+/*!********************************************!*\
+  !*** external "@material-ui/core/Toolbar" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Toolbar");
 
 /***/ }),
 

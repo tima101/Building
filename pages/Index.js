@@ -11,7 +11,7 @@ const Index = () => (
       />
     </Head>
     <Header />
-    <p>Content on Index page</p>
+    <p>Content on Index page, yo!</p>
   </div>
 );
 
