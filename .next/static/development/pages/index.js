@@ -16158,6 +16158,9 @@ var _this = undefined,
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+var styleDiv = {
+  color: "red"
+};
 
 var Index = function Index() {
   return __jsx("div", {
@@ -16167,21 +16170,21 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 9,
       columnNumber: 3
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 10,
       columnNumber: 5
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 11,
       columnNumber: 7
     }
   }, "Index page"), __jsx("meta", {
@@ -16190,22 +16193,30 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 12,
       columnNumber: 7
     }
-  })), __jsx("p", {
+  })), __jsx("div", {
+    style: styleDiv,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 17,
       columnNumber: 5
     }
-  }, "Content on Index page, yo!"), __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 7
+    }
+  }, "Content on Index page, yo!")), __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     variant: "contained",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 20,
       columnNumber: 5
     }
   }, "MUI button"));
@@ -16215,7 +16226,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fchanson6%2FDesktop%2Fhddle-master%2FBuilding%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************************/
@@ -16238,5 +16249,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

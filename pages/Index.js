@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Button from "@material-ui/core/Button";
 
+const styleDiv = {
+  color: "red"
+};
+
 const Index = () => (
   <div style={{ padding: "10px 45px" }}>
     <Head>
@@ -10,7 +14,9 @@ const Index = () => (
         content="This is the description of the Index page"
       />
     </Head>
-    <p>Content on Index page, yo!</p>
+    <div style={styleDiv}>
+      <p>Content on Index page, yo!</p>
+    </div>
     <Button variant="contained">MUI button</Button>
   </div>
 );
