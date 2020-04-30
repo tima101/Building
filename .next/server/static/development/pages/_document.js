@@ -1635,16 +1635,15 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_9___default.a {
                 border-left: 0.25em solid #dfe2e5;
               }
               pre {
-                display: block;
-                overflow-x: auto;
-                padding: 0.5em;
-                background: #FFF;
+                display:block;
+                overflow-x:auto;
+                padding:0.5em;
+                background:#FFF;
+                color: #000;
                 border: 1px solid #ddd;
               }
               code {
                 font-size: 14px;
-                background: #FFF;
-                padding: 3px 5px;
               }
             `)), __jsx("body", {
       style: {
@@ -1658,21 +1657,21 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_9___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71,
+        lineNumber: 70,
         columnNumber: 9
       }
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 80,
         columnNumber: 11
       }
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82,
+        lineNumber: 81,
         columnNumber: 11
       }
     })));
@@ -1681,6 +1680,28 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_9___default.a {
 }
 
 MyDocument.getInitialProps = async ctx => {
+  // Resolution order
+  //
+  // On the server:
+  // 1. app.getInitialProps
+  // 2. page.getInitialProps
+  // 3. document.getInitialProps
+  // 4. app.render
+  // 5. page.render
+  // 6. document.render
+  //
+  // On the server with error:
+  // 1. document.getInitialProps
+  // 2. app.render
+  // 3. page.render
+  // 4. document.render
+  //
+  // On the client
+  // 1. app.getInitialProps
+  // 2. page.getInitialProps
+  // 3. app.render
+  // 4. page.render
+  // Render app and page and get the context of the page with collected side effects.
   const sheets = new _material_ui_styles__WEBPACK_IMPORTED_MODULE_10__["ServerStyleSheets"]();
   const originalRenderPage = ctx.renderPage;
 
@@ -1689,7 +1710,7 @@ MyDocument.getInitialProps = async ctx => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95,
+        lineNumber: 117,
         columnNumber: 50
       }
     })))
@@ -1697,11 +1718,12 @@ MyDocument.getInitialProps = async ctx => {
 
   const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_9___default.a.getInitialProps(ctx);
   return _objectSpread({}, initialProps, {
+    // Styles fragment is rendered after the app and page rendering finish.
     styles: __jsx(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102,
+        lineNumber: 126,
         columnNumber: 7
       }
     }, initialProps.styles, sheets.getStyleElement())

@@ -106,16 +106,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/chanson6/Desktop/hddle-master/Building/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-const styleDiv = {
-  color: "red"
-};
 
 const Index = () => __jsx("div", {
   style: {
@@ -124,56 +118,40 @@ const Index = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9,
+    lineNumber: 4,
     columnNumber: 3
   }
 }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10,
+    lineNumber: 5,
     columnNumber: 5
   }
 }, __jsx("title", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11,
+    lineNumber: 6,
     columnNumber: 7
   }
 }, "Index page"), __jsx("meta", {
   name: "description",
-  content: "This is the description of the Index page",
+  content: "This is SEO description of Index page",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 7
+  }
+})), __jsx("p", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12,
-    columnNumber: 7
-  }
-})), __jsx("div", {
-  style: styleDiv,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17,
     columnNumber: 5
   }
-}, __jsx("p", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 7
-  }
-}, "Content on Index page, yo!")), __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  variant: "contained",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20,
-    columnNumber: 5
-  }
-}, "MUI button"));
+}, "Content on Index page"));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
@@ -188,17 +166,6 @@ const Index = () => __jsx("div", {
 
 module.exports = __webpack_require__(/*! /Users/chanson6/Desktop/hddle-master/Building/pages/index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "@material-ui/core/Button":
-/*!*******************************************!*\
-  !*** external "@material-ui/core/Button" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Button");
 
 /***/ }),
 
