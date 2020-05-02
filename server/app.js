@@ -1,11 +1,14 @@
 const express = require("express");
 
+const port = process.env.PORT || 8000;
+const ROOT_URL = `http://localhots:${port}`;
+
 const server = express();
 
 server.get("/", (req, res) => {
   res.send("My express server");
 });
 
-server.listen(3000, () => {
-  console.log("Ready on port 3000!"); // eslint-disable-line no-console
+server.listen(port, () => {
+  console.log(`> Ready on ${ROOT_URL}`); // eslint-disable-line no-console
 });
