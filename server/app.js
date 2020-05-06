@@ -2,11 +2,13 @@ const express = require("express");
 const next = require("next");
 
 const port = process.env.PORT || 8000;
-const ROOT_URL = `http://localhots:${port}`;
+const ROOT_URL = `http://localhost:${port}`;
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
+
+const mongoose = require("mongoose");
 
 app.prepare().then(() => {
   const server = express();
