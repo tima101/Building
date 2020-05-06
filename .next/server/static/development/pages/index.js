@@ -104,55 +104,79 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/chanson6/Desktop/hddle-master/Building/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Index = () => __jsx("div", {
+
+const Index = ({
+  user
+}) => __jsx("div", {
   style: {
     padding: "10px 45px"
   },
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4,
+    lineNumber: 6,
     columnNumber: 3
   }
-}, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+}, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5,
+    lineNumber: 7,
     columnNumber: 5
   }
 }, __jsx("title", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6,
+    lineNumber: 8,
     columnNumber: 7
   }
 }, "Index page"), __jsx("meta", {
   name: "description",
-  content: "This is SEO description of Index page",
+  content: "This is the description of the Index page",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 7
   }
 })), __jsx("p", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12,
+    lineNumber: 14,
     columnNumber: 5
   }
-}, "Content on Index page"));
+}, "Content on Index page"), __jsx("p", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15,
+    columnNumber: 5
+  }
+}, "Email:", user.email));
 
+Index.getInitialProps = async ctx => ({
+  user: ctx.query.user
+});
+
+Index.propTypes = {
+  user: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
+    email: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
+  })
+};
+Index.defaultProps = {
+  user: null
+};
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
@@ -177,6 +201,17 @@ module.exports = __webpack_require__(/*! /Users/chanson6/Desktop/hddle-master/Bu
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
 
 /***/ }),
 
