@@ -1,14 +1,24 @@
 const express = require("express");
 const next = require("next");
 
+const mongoose = require("mongoose");
+
+const dev = process.env.NODE_ENV !== "production";
+const MONGO_URL = process.env.MONGO_URL_TEST;
+
+const options = {
+  useNewURLParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+};
+
+mongoose.connect(MONGO_URL, options);
+
 const port = process.env.PORT || 8000;
 const ROOT_URL = `http://localhost:${port}`;
 
-const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
-
-const mongoose = require("mongoose");
 
 app.prepare().then(() => {
   const server = express();
