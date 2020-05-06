@@ -6155,7 +6155,7 @@ var Index = function Index(_ref) {
     }
   }, "Index page"), __jsx("meta", {
     name: "description",
-    content: "This is the description of the Index page",
+    content: "This is an SEO description of the Index page",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -6176,7 +6176,7 @@ var Index = function Index(_ref) {
       lineNumber: 15,
       columnNumber: 5
     }
-  }, "Email:", user.email));
+  }, "Email:\xA0", user.email));
 };
 
 Index.getInitialProps = function _callee(ctx) {
@@ -6198,6 +6198,7 @@ Index.getInitialProps = function _callee(ctx) {
 
 Index.propTypes = {
   user: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+    displayName: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
     email: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string.isRequired
   })
 };

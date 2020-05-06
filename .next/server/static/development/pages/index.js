@@ -142,7 +142,7 @@ const Index = ({
   }
 }, "Index page"), __jsx("meta", {
   name: "description",
-  content: "This is the description of the Index page",
+  content: "This is an SEO description of the Index page",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -163,7 +163,7 @@ const Index = ({
     lineNumber: 15,
     columnNumber: 5
   }
-}, "Email:", user.email));
+}, "Email:\xA0", user.email));
 
 Index.getInitialProps = async ctx => ({
   user: ctx.query.user
@@ -171,6 +171,7 @@ Index.getInitialProps = async ctx => ({
 
 Index.propTypes = {
   user: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
+    displayName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
     email: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
   })
 };
