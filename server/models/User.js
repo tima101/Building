@@ -35,7 +35,7 @@ const mongoSchema = new Schema({
   displayName: String,
   avatarUrl: String,
 
-  isGitHubConnected: {
+  isGithubConnected: {
     type: Boolean,
     default: false
   },
