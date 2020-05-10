@@ -18,6 +18,7 @@ const options = {
   useCreateIndex: true,
   useFindAndModify: false
 };
+
 mongoose.connect(MONGO_URL, options);
 
 const port = process.env.PORT || 8000;
@@ -30,7 +31,7 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  // configuring MongoDB session store
+  // confuring MongoDB session store
   const MongoStore = mongoSessionStore(session);
 
   const sess = {
@@ -50,7 +51,7 @@ app.prepare().then(() => {
 
   server.use(session(sess));
 
-  // this is testing code, remove later
+  // this is test code, it will be removed by the end of Chapter 3
   server.get("/", async (req, res) => {
     req.session.foo = "bar";
     const user = await User.findOne({ slug: "team-builder-book" });

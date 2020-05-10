@@ -5,10 +5,10 @@ import Head from "next/head";
 const Index = ({ user }) => (
   <div style={{ padding: "10px 45px" }}>
     <Head>
-      <title>Index page</title>
+      <title>Dashboard</title>
       <meta
         name="description"
-        content="This is an SEO description of the Index page"
+        content="This is a description of the Index page"
       />
     </Head>
     <p>Content on Index page</p>
